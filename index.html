@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HEXATRON // AI TERMINAL</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="stars"></div>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="orb">H</div>
+        <div>
+          <div class="logo">HEXATRON</div>
+          <div class="tag">NEURAL TEXT ENGINE // V3.1 TURBO</div>
+        </div>
+      </div>
+      <div id="status" class="status"><span></span> CONNECTING...</div>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">WELCOME TO THE MACHINE</div>
+      <h1>Ask <span>Hexatron.</span></h1>
+      <p>A tiny homegrown language model with a very purple control room.</p>
+    </section>
+
+    <section class="terminal">
+      <div class="terminal-head">
+        <span class="led"></span>
+        <span>HEXATRON CHAT CONSOLE</span>
+        <span class="dots">◆ ◆ ◆</span>
+      </div>
+
+      <div id="output" class="output">
+        <div class="message bot">
+          <div class="avatar">H</div>
+          <div class="bubble">Hexatron online. Give me some text to continue. ✦</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <textarea id="prompt" rows="3" placeholder="Type your prompt here..."></textarea>
+        <div class="bottom-row">
+          <div class="sliders">
+            <label>Temperature
+              <input id="temperature" type="range" min="0.1" max="1.5" step="0.1" value="0.8">
+              <b id="tempValue">0.8</b>
+            </label>
+            <label>Tokens
+              <input id="tokens" type="range" min="20" max="256" step="10" value="120">
+              <b id="tokenValue">120</b>
+            </label>
+          </div>
+          <button id="send">GENERATE <span>➜</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="specs">
+      <div><b>15.86M</b><small>PARAMETERS</small></div>
+      <div><b>2,048</b><small>VOCABULARY</small></div>
+      <div><b>256</b><small>CONTEXT</small></div>
+      <div><b>8 × 384</b><small>TRANSFORMER</small></div>
+    </section>
+
+    <footer>HEXATRON LABS // BUILT FROM SCRATCH // 2000s CYBER-DREAM EDITION</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
